@@ -1,8 +1,9 @@
 {
   "name": "zhiaiwan-lodash",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "sideEffects": false,
   "scripts": {
+    "build": "node build/build.js",
     "lint": "npx prettier --write ./src"
   },
   "devDependencies": {
