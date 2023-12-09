@@ -1,0 +1,11 @@
+{
+  "name": "zhiaiwan-lodash",
+  "version": "1.0.0",
+  "description": "基于lodash拓展的工具库",
+  "keywords": "只爱玩, zhiaiwan, lodash, lodash-es, 工具库, 工具包",
+  "homepage": "https://www.zhiaiwan.com/",
+  "icon": "https://lodash.com/icon.svg",
+  "license": "MIT",
+  "main": "lodash.js",
+  "author": "Robin Li <61538187@qq.com>"
+}

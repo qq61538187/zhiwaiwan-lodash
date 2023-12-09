@@ -1,0 +1,30 @@
+{
+  "name": "zhiaiwan-lodash",
+  "version": "1.0.0",
+  "sideEffects": false,
+  "scripts": {
+    "lint": "npx prettier --write ./src"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "child_process": "^1.0.2",
+    "prettier": "3.0.3",
+    "qunit-extras": "^3.0.0",
+    "qunitjs": "^2.4.1"
+  },
+  "engineStrict": true,
+  "dependencies": {
+    "chalk": "4",
+    "closure-compiler": "0.2.12",
+    "download-git-repo": "^3.0.2",
+    "glob": "7.1.1",
+    "handlebars": "^4.7.7",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "log-symbols": "4",
+    "ora": "5",
+    "semver": "5.3.0",
+    "uglify-js": "2.7.5"
+  }
+}
