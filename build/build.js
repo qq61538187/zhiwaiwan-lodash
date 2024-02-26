@@ -305,6 +305,11 @@ function build(){
     fs.writeFileSync(path.resolve(__dirname, '../release/package.json'), JSON.stringify(zhiaiwanPkg, null, 2), 'utf-8')
     zhiaiwanPkg.name = 'zhiaiwan-lodash-es'
     delete zhiaiwanPkg.main
+    zhiaiwanPkg['type'] = 'module'
+    zhiaiwanPkg['jsnext:main'] = 'lodash.js'
+    zhiaiwanPkg['main'] = 'lodash.js'
+    zhiaiwanPkg['module'] = 'lodash.js'
+    zhiaiwanPkg['sideEffects'] = false
     fs.writeFileSync(path.resolve(__dirname, '../release-es/package.json'), JSON.stringify(zhiaiwanPkg, null, 2), 'utf-8')
     fs.writeFileSync(path.resolve(__dirname, '../release-es/.npmignore'), `.npmignore \n.npmrc\npackage.json\n`);
     fs.writeFileSync(path.resolve(__dirname, '../release-es/.npmrc'), `registry=https://registry.npmjs.org/`);
