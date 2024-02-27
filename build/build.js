@@ -176,7 +176,7 @@ function rewriteLodashJsContentCommonJs(){
   var lodashContent = '';
   fileUtils.copyFolderContents(path.resolve(__dirname, '../src'),path.resolve(__dirname, '../src'),{isCopy:false, getFile:(lodashApiFile)=>{
     if (lodashApiFile.endsWith('.js')) {
-      srcFnPrototypeContent += `lodash.prototype.${path.basename(lodashApiFile, '.js')} = ${path.basename(lodashApiFile, '.js')}\n`
+      srcFnPrototypeContent += `lodash.${path.basename(lodashApiFile, '.js')} = ${path.basename(lodashApiFile, '.js')}\n`
       fileUtils.readFileSync(lodashApiFile,(line)=>{
         var match =  line.match(requireRegex);
         if(!match){
