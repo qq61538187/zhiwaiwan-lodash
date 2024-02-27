@@ -12,7 +12,7 @@ function getTreeMaxDepth(tree, options) {
     var mergedOptions = assign({}, { childrenKey: 'children' }, options);
     forEach(tree, function (item) {
         if (item[mergedOptions.childrenKey] && item[mergedOptions.childrenKey].length) {
-            var childrenDepth = getTreeMaxDepth(item[mergedOptions.childrenKey], mergedOption);
+            var childrenDepth = getTreeMaxDepth(item[mergedOptions.childrenKey], mergedOptions);
             if (childrenDepth > maxDepth) {
                 maxDepth = childrenDepth;
             }
